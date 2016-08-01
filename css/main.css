@@ -1,5 +1,6 @@
 body, html {
     /*background: url(bg.jpg);*/
+    background-color: #F5FFFA;
     background-size: 110px 69px;
     font-family: 'Playfair Display', serif;
 }
@@ -30,7 +31,7 @@ body p {
 }
 
 .header h1 span+span {
-    color:#000;
+    color:#112038;
     display: block;
     font-size: 28px;
     padding: 0;
@@ -63,7 +64,7 @@ h2 {
 }
 
 h3 {
-    color: #ce2c38;
+    color: #112038;
     font-family: 'Oswald', sans-serif;
     margin: 10px 0 5px;
     text-transform: uppercase;

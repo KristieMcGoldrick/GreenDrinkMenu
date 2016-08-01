@@ -25,26 +25,32 @@
         </div>
       </div>
 
-      <div class="main row" ng-repeat='main in mains'>
-        <div class="item col-md-9">
-          <h3 class="name"> {{ main.name }}</h3>
-          <p class="description">{{ main.description }} </p>
-        </div>
-        <div class="price col-md-3">
-          <p class="price"> {{ main.price | currency }} </p>
+      <div class='container'>
+        <h2>Other Favorites</h2>
+        <div class="main row" ng-repeat='main in mains'>
+          <div class="item col-md-9">
+            <h3 class="name"> {{ main.name }}</h3>
+            <p class="description">{{ main.description }} </p>
+          </div>
+          <div class="price col-md-3">
+            <p class="price"> {{ main.price | currency }} </p>
+          </div>
         </div>
       </div>
 
-      <div class="extra row" ng-repeat='extra in extras'>
-        <div class="item col-md-9">
-          <h3 class="name"> {{ extra.name }}</h3>
-          <p class="description">{{ extra.benefits }} </p>
+      <div class='container'>
+        <h2>Extras</h2>
+        <div class="extra row" ng-repeat='extra in extras'>
+          <div class="item col-md-9">
+            <h3 class="name"> {{ extra.name }}</h3>
+            <p class="description">{{ extra.benefits }} </p>
+          </div>
+        <div class="price col-md-3">
+          <p class="price"> {{ extra.price | currency }} </p>
         </div>
-      <div class="price col-md-3">
-        <p class="price"> {{ extra.price | currency }} </p>
+        </div>
       </div>
-      </div>
-    </div>
+  </div>
     <div class="footer">
     </div>
     <!-- Angular CDN   -->
