@@ -13,7 +13,6 @@
     <div class="main" ng-controller='MainController'>
       <div class="container">
         <h1>Specials for {{ today | date }}</h1>
-
         <h2>Staples</h2>
         <div class="appetizers row" ng-repeat='appetizer in appetizers'>
           <div class="item col-md-9">
@@ -24,28 +23,27 @@
             <p class="price"> {{ appetizer.price | currency }} </p>
           </div>
         </div>
-
       </div>
 
-    <div class="main row" ng-repeat='main in mains'>
-      <div class="item col-md-9">
-        <h3 class="name"> {{ main.name }}</h3>
-        <p class="description">{{ main.description }} </p>
+      <div class="main row" ng-repeat='main in mains'>
+        <div class="item col-md-9">
+          <h3 class="name"> {{ main.name }}</h3>
+          <p class="description">{{ main.description }} </p>
+        </div>
+        <div class="price col-md-3">
+          <p class="price"> {{ main.price | currency }} </p>
+        </div>
       </div>
+
+      <div class="extra row" ng-repeat='extra in extras'>
+        <div class="item col-md-9">
+          <h3 class="name"> {{ extra.name }}</h3>
+          <p class="description">{{ extra.benefits }} </p>
+        </div>
       <div class="price col-md-3">
-        <p class="price"> {{ main.price | currency }} </p>
+        <p class="price"> {{ extra.price | currency }} </p>
       </div>
-    </div>
-
-    <div class="extra row" ng-repeat='extra in extras'>
-      <div class="item col-md-9">
-        <h3 class="name"> {{ extra.name }}</h3>
-        <p class="description">{{ extra.benefits }} </p>
       </div>
-      <div class="price col-md-3">
-      <p class="price"> {{ extra.price | currency }} </p>
-      </div>
-    </div>
     </div>
     <div class="footer">
     </div>
